@@ -1,0 +1,75 @@
+
+.Barra {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.letras {
+    text-align: center;
+    color: #ffffff;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #001aff;
+    color: white;
+}
+
+tr:hover {
+    background-color: #ff0000;
+}
+
+td {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.Rea {
+    color: #007BFF;
+}
+
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+code {
+    background-color: #f8f9fa;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+
+.animated-image {
+    display: block;
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilo2/Diseño.css">
+</head>
+<body>
+
+
+    <h1>¡Bienvenido!</h1>
+    <p>Selecciona un elemento y haz clic para que se lea en voz alta.</p>
+
+    
+    
+    <script>
+        document.addEventListener('click', function(event) {
+            if (event.target.tagName === 'P') {
+                speakText(event.target.textContent);
+            }
+        });
+
+        function speakText(text) {
+            var synth = window.speechSynthesis;
+            var utterance = new SpeechSynthesisUtterance(text);
+            synth.speak(utterance);
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+<p id="parrafo1"></p>
+
+        <div class="Barra">
+            <div class="letras">
+                <h1>React y JSX</h1>
+                <h2>Cuadro comparativo entre React y JSX </h2>
+            </div>
+        </div>
+    
+        <table>
+            <tr>
+            <th>Característica</th>
+            <th>React</th>
+            <th>JSX</th>
+            </tr>
+            
+            <tr>
+            <td>Definición</td>
+            <td>Biblioteca de JavaScript para construir interfaces de usuario interactivas.</td>
+            <td>Sintaxis de extensión de JavaScript que facilita la creación de estructuras de interfaz de usuario en React.</td>
+            </tr>
+    
+            <tr>
+            <td>Propósito</td>
+            <td>Facilita la creación de componentes reutilizables que gestionan el estado y la lógica de la interfaz de usuario.</td>
+            <td>Permite escribir código similar a HTML en JavaScript para describir la estructura de la interfaz de usuario.</td>
+            </tr>
+    
+            <tr>
+            <td>Uso principal</td>
+            <td>Desarrollo de interfaces de usuario en aplicaciones de una sola página (SPA).</td>
+            <td>Especificación de la estructura de la interfaz de usuario en React.</td>
+            </tr>
+    
+            <tr>
+            <td>Sintaxis específica</td>
+            <td>Sigue la sintaxis de JavaScript y utiliza una API específica de React para definir componentes.</td>
+            <td>Permite la incorporación de marcado HTML directamente en el código JavaScript.</td>
+            </tr>
+    
+            <tr>
+            <td>Ventajas</td>
+            <td>- Gestión eficiente del estado con el uso de componentes. <br> - Virtual DOM para mejorar el rendimiento de las actualizaciones. <br> - Comunidad activa y amplia.</td>
+            <td>- Facilita la escritura de código más legible y similar a HTML. <br> - Integra el marcado directamente en el código JavaScript.</td>
+            </tr>
+    
+            <tr>
+                <td>Desventajas</td>
+                <td>- Curva de aprendizaje inicial. <br> - Puede resultar verboso para algunas personas. <br> - Comunidad activa y amplia.</td>
+                <td>- Puede ser confuso para quienes no están familiarizados con la sintaxis JSX. <br> - Requiere transpilación a JavaScript estándar antes de ser interpretado por los navegadores.</td>
+            </tr>
+        </table>
+</p>
+
+
+<p id="parrafo2">
+        <div class="Rea">
+            <h2>¿Qué son clases en React?</h2>
+        </div>
+    
+        <p>Las clases son otra forma de definir un componente en React y se caracterizan por tener propiedades. A diferencia de las funciones, pueden definir estados propios sin utilizar el concepto de Hook.<br>
+        Dentro de los componentes de clase, existe una función constructora que se utiliza para definir el estado inicial del componente. Es muy importante llamar a la función <code>super()</code> dentro del constructor para que los parámetros funcionen adecuadamente.</p>
+    
+        <img src="React.png" alt="React" width="950" class="animated-image">
+    
+        <h2>Principales eventos de React</h2>
+        <p>Cuando escuchamos un evento, declaramos una función escuchadora (listener) que se ejecutará cuando se reciba un evento de cierto tipo.<br> Esto es así tanto para eventos del DOM como para eventos sintéticos 
+            de React, sólo cambiaremos cómo asignamos la función al tipo de evento.
+            Vamos a ver un ejemplo. Queremos escuchar un evento de click desde un botón que declaramos con JSX. Escribiremos el botón (<button>texto</button>) y en un atributo onClick <br>
+            (ojo con la mayúscula) añadiremos la función "escuchadora", que será la reacción. Quedará así:<br>
+    
+            <img src="Ejemplo.png" alt="React" width="900" class="animated-image">
+        </p>
+        <p>Podríamos escribir directamente la función escuchadora como una arrow function ahí, pero no quedaría legible. Preferiremos declararla fuera y la pasaremos (sin llamarla) al atributo de JSX:
+            <img src="Ejemplo2.png" alt="React" width="800" class="animated-image"><br>
+            Ya está. Cuando hagamos clic en el botón, React se encargará de escuchar el evento y de ejecutar la función.
+        </p>
+</p>    
+<h3>link  del mapa conceptual: https://www.canva.com/design/DAF01XcXz1s/oFaK_Npk91njzNTkmDX2jw/view?utm_content=DAF01XcXz1s&utm_campaign=designshare&utm_medium=link&utm_source=editor</h3>
+</html>
